@@ -49,4 +49,8 @@ class ShopLogAdapter(realmResults: OrderedRealmCollection<ShopLog>)
 
         return view
     }
+
+    override fun isEnabled(position: Int): Boolean {
+        return false
+    }
 }
