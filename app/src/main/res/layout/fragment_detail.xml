@@ -20,7 +20,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginStart="20dp"
         android:textSize="16sp"
-        android:text="営業中..."/>
+        android:text="営業中・営業終了時間 22:00 徒歩15分"/>
 
     <TextView
         android:id="@+id/shop_star_text"
@@ -39,7 +39,7 @@
         android:layout_toEndOf="@id/shop_star_text"
         android:layout_marginStart="4dp"
         android:layout_marginTop="3dp"
-        android:isIndicator="false"
+        android:isIndicator="true"
         android:numStars="5"
         android:rating="0.5"/>
 
@@ -61,7 +61,6 @@
         android:layout_below="@id/shop_log_title"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="24dp"
         android:divider="@null"
         android:dividerHeight="6dp"
         tools:listitem="@layout/item_shop_log"/>
