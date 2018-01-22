@@ -17,7 +17,7 @@ class DetailActivity : AppCompatActivity() {
         transaction.add(R.id.frame_fragment_detail, DetailFragment().createInstance(id))
         transaction.commit()
 
-        fab.setOnClickListener {
+        fab_detail.setOnClickListener {
             val intent = Intent(this@DetailActivity, PostActivity::class.java)
             startActivity(intent)
         }
