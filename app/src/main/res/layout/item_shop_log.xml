@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/log_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+
+    <RatingBar
+        android:id="@+id/log_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@id/log_date"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"/>
+
+    <TextView
+        android:id="@+id/log_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_date"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

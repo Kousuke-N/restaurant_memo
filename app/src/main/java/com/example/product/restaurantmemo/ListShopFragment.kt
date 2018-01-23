@@ -31,10 +31,6 @@ class ListShopFragment : Fragment() {
         val uniqueData = realm.where(ShopLog::class.java).distinct("placeId")
 
         list.adapter = ListShopAdapter(uniqueData)
-
-//        list.setOnItemClickListener {
-//            // 店の詳細情報へ
-//        }
     }
 
     override fun onDestroy() {

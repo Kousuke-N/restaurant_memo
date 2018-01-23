@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment"
+    tools:showIn="@layout/activity_detail">
+
+    <ImageView
+        android:id="@+id/shop_appearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/shop_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_appearance"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:text="営業中・営業終了時間 22:00 徒歩15分"/>
+
+    <TextView
+        android:id="@+id/shop_star_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_information"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"/>
+
+    <RatingBar
+        android:id="@+id/shop_star_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+        android:layout_below="@id/shop_information"
+        android:layout_toEndOf="@id/shop_star_text"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1"/>
+
+    <TextView
+        android:id="@+id/shop_log_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_star_text"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:text="履歴"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/log_list_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/shop_log_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:divider="@null"
+        android:dividerHeight="6dp"
+        tools:listitem="@layout/item_shop_log"/>
+
+</RelativeLayout>
